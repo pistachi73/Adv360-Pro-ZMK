@@ -41,6 +41,7 @@
 
     combos {
         compatible = "zmk,combos";
+        #include "combos.dtsi"
 combo_lbrace {
     timeout-ms = <50>;
     key-positions = <32 33>;                // F + G -> {
