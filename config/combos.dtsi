@@ -1,158 +1,152 @@
 // Programming-focused combos for HTML/JS/TS/CSS development
 // Key positions for Kinesis Advantage 360 Pro
 
-combos {
-    compatible = "zmk,combos";
-    
-    // === BRACKETS & BRACES (SYMMETRICAL) ===
-    
-    combo_lbrace {
-        timeout-ms = <50>;
-        key-positions = <32 33>;                // F + G -> {
-        bindings = <&kp LBRC>;
-        layers = <0>;
-    };
-    
-    combo_rbrace {
-        timeout-ms = <50>;
-        key-positions = <40 41>;                // H + J -> } (mirror of F+G)
-        bindings = <&kp RBRC>;
-        layers = <0>;
-    };
-    
-    combo_lparen {
-        timeout-ms = <50>;
-        key-positions = <31 32>;                // D + F -> (
-        bindings = <&kp LPAR>;
-        layers = <0>;
-    };
-    
-    combo_rparen {
-        timeout-ms = <50>;
-        key-positions = <41 42>;                // J + K -> ) (mirror of D+F)
-        bindings = <&kp RPAR>;
-        layers = <0>;
-    };
-    
-    combo_lbracket {
-        timeout-ms = <50>;
-        key-positions = <30 31>;                // S + D -> [
-        bindings = <&kp LBKT>;
-        layers = <0>;
-    };
-    
-    combo_rbracket {
-        timeout-ms = <50>;
-        key-positions = <42 43>;                // K + L -> ] (mirror of S+D)
-        bindings = <&kp RBKT>;
-        layers = <0>;
-    };
-    
-    // === QUOTES ===
-    
-    combo_dqt {
-        timeout-ms = <50>;
-        key-positions = <17 18>;                // E + R -> "
-        bindings = <&kp DQT>;
-        layers = <0>;
-    };
-    
-    combo_grave {
-        timeout-ms = <50>;
-        key-positions = <19 20>;                // R + T -> `
-        bindings = <&kp GRAVE>;
-        layers = <0>;
-    };
-    
-    // === PROGRAMMING SYMBOLS ===
-    
-    combo_pipe {
-        timeout-ms = <50>;
-        key-positions = <48 49>;                // X + C -> |
-        bindings = <&kp PIPE>;
-        layers = <0>;
-    };
-    
-    combo_ampersand {
-        timeout-ms = <50>;
-        key-positions = <49 50>;                // C + V -> &
-        bindings = <&kp AMPS>;
-        layers = <0>;
-    };
-    
-    combo_dollar {
-        timeout-ms = <50>;
-        key-positions = <50 51>;                // V + B -> $ (for template literals)
-        bindings = <&kp DLLR>;
-        layers = <0>;
-    };
-    
-    // === OPERATORS ===
-    
-    combo_equal {
-        timeout-ms = <50>;
-        key-positions = <54 55>;                // N + M -> =
-        bindings = <&kp EQUAL>;
-        layers = <0>;
-    };
-    
-    combo_plus {
-        timeout-ms = <50>;
-        key-positions = <55 56>;                // M + < -> +
-        bindings = <&kp PLUS>;
-        layers = <0>;
-    };
-    
-    combo_minus {
-        timeout-ms = <50>;
-        key-positions = <56 57>;                // < + > -> -
-        bindings = <&kp MINUS>;
-        layers = <0>;
-    };
-    
-    combo_star {
-        timeout-ms = <50>;
-        key-positions = <21 22>;                // Y + U -> *
-        bindings = <&kp STAR>;
-        layers = <0>;
-    };
-    
-    combo_slash {
-        timeout-ms = <50>;
-        key-positions = <22 23>;                // U + I -> /
-        bindings = <&kp FSLH>;
-        layers = <0>;
-    };
-    
-    // === HTML/CSS SPECIFIC ===
-    
-    combo_lt {
-        timeout-ms = <50>;
-        key-positions = <47 48>;                // Z + X -> < (HTML tags)
-        bindings = <&kp LT>;
-        layers = <0>;
-    };
-    
-    combo_gt {
-        timeout-ms = <50>;
-        key-positions = <57 58>;                // > + ? -> > (HTML tags)
-        bindings = <&kp GT>;
-        layers = <0>;
-    };
-    
-    
-    
-    combo_home {
-        timeout-ms = <50>;
-        key-positions = <29 30>;                // A + S -> Home
-        bindings = <&kp HOME>;
-        layers = <0>;
-    };
-    
-    combo_end {
-        timeout-ms = <50>;
-        key-positions = <43 44>;                // L + ; -> End
-        bindings = <&kp END>;
-        layers = <0>;
-    };
+// === BRACKETS & BRACES (SYMMETRICAL) ===
+
+combo_lbrace {
+    timeout-ms = <50>;
+    key-positions = <32 33>;                // F + G -> {
+    bindings = <&kp LBRC>;
+    layers = <0>;
+};
+
+combo_rbrace {
+    timeout-ms = <50>;
+    key-positions = <40 41>;                // H + J -> } (mirror of F+G)
+    bindings = <&kp RBRC>;
+    layers = <0>;
+};
+
+combo_lparen {
+    timeout-ms = <50>;
+    key-positions = <31 32>;                // D + F -> (
+    bindings = <&kp LPAR>;
+    layers = <0>;
+};
+
+combo_rparen {
+    timeout-ms = <50>;
+    key-positions = <41 42>;                // J + K -> ) (mirror of D+F)
+    bindings = <&kp RPAR>;
+    layers = <0>;
+};
+
+combo_lbracket {
+    timeout-ms = <50>;
+    key-positions = <30 31>;                // S + D -> [
+    bindings = <&kp LBKT>;
+    layers = <0>;
+};
+
+combo_rbracket {
+    timeout-ms = <50>;
+    key-positions = <42 43>;                // K + L -> ] (mirror of S+D)
+    bindings = <&kp RBKT>;
+    layers = <0>;
+};
+
+// === QUOTES ===
+
+combo_dqt {
+    timeout-ms = <50>;
+    key-positions = <17 18>;                // E + R -> "
+    bindings = <&kp DQT>;
+    layers = <0>;
+};
+
+combo_grave {
+    timeout-ms = <50>;
+    key-positions = <19 20>;                // R + T -> `
+    bindings = <&kp GRAVE>;
+    layers = <0>;
+};
+
+// === PROGRAMMING SYMBOLS ===
+
+combo_pipe {
+    timeout-ms = <50>;
+    key-positions = <48 49>;                // X + C -> |
+    bindings = <&kp PIPE>;
+    layers = <0>;
+};
+
+combo_ampersand {
+    timeout-ms = <50>;
+    key-positions = <49 50>;                // C + V -> &
+    bindings = <&kp AMPS>;
+    layers = <0>;
+};
+
+combo_dollar {
+    timeout-ms = <50>;
+    key-positions = <50 51>;                // V + B -> $ (for template literals)
+    bindings = <&kp DLLR>;
+    layers = <0>;
+};
+
+// === OPERATORS ===
+
+combo_equal {
+    timeout-ms = <50>;
+    key-positions = <54 55>;                // N + M -> =
+    bindings = <&kp EQUAL>;
+    layers = <0>;
+};
+
+combo_plus {
+    timeout-ms = <50>;
+    key-positions = <55 56>;                // M + < -> +
+    bindings = <&kp PLUS>;
+    layers = <0>;
+};
+
+combo_minus {
+    timeout-ms = <50>;
+    key-positions = <56 57>;                // < + > -> -
+    bindings = <&kp MINUS>;
+    layers = <0>;
+};
+
+combo_star {
+    timeout-ms = <50>;
+    key-positions = <21 22>;                // Y + U -> *
+    bindings = <&kp STAR>;
+    layers = <0>;
+};
+
+combo_slash {
+    timeout-ms = <50>;
+    key-positions = <22 23>;                // U + I -> /
+    bindings = <&kp FSLH>;
+    layers = <0>;
+};
+
+// === HTML/CSS SPECIFIC ===
+
+combo_lt {
+    timeout-ms = <50>;
+    key-positions = <47 48>;                // Z + X -> < (HTML tags)
+    bindings = <&kp LT>;
+    layers = <0>;
+};
+
+combo_gt {
+    timeout-ms = <50>;
+    key-positions = <57 58>;                // > + ? -> > (HTML tags)
+    bindings = <&kp GT>;
+    layers = <0>;
+};
+
+combo_home {
+    timeout-ms = <50>;
+    key-positions = <29 30>;                // A + S -> Home
+    bindings = <&kp HOME>;
+    layers = <0>;
+};
+
+combo_end {
+    timeout-ms = <50>;
+    key-positions = <43 44>;                // L + ; -> End
+    bindings = <&kp END>;
+    layers = <0>;
 };

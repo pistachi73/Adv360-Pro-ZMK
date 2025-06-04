@@ -43,10 +43,7 @@
     combos {
         compatible = "zmk,combos";
 
-        fa {
-            bindings = <&kp C>;
-            key-positions = <30>;
-        };
+        #include "combos.dtsi"
     };
 
     keymap {
