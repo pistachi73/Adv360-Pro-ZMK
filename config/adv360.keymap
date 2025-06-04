@@ -9,6 +9,7 @@
     behaviors {
         #include "macros.dtsi"
         #include "version.dtsi"
+        #include "combos.dtsi"
 
         hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
