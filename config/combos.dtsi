@@ -3,8 +3,8 @@
 
 // === BRACKETS & BRACES (SYMMETRICAL) ===
 
-#define COMBO_TERM_FAST 18
-#define COMBO_TERM_SLOW 30
+#define COMBO_TERM_FAST 30
+#define COMBO_TERM_SLOW 50
 
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
@@ -183,17 +183,20 @@ combo_end {
 combo_cmd_tab {
     timeout-ms = <COMBO_TERM_SLOW>;
     key-positions = <41 42 43>;                // J + K + L  -> Cmd+Tab (App Switcher)
-    bindings = <&swap>;
+    bindings = <&kp LG(TAB)>;
     require-prior-idle-ms = <COMBO_IDLE_SLOW>;
     layers = <0>;
 };
 
 combo_cntrl_tab {
     timeout-ms = <COMBO_TERM_SLOW>;
-    key-positions = <30 31 32>;                // S + D + F  -> Ctrl+Tab (Tab Switcher)
+    key-positions = <55 56 57>;                // S + D + F  -> Ctrl+Tab (Tab Switcher)
     bindings = <&kp LC(TAB)>;
     require-prior-idle-ms = <COMBO_IDLE_SLOW>;
     layers = <0>;
 };
 
  
+
+ 
+
