@@ -3,150 +3,197 @@
 
 // === BRACKETS & BRACES (SYMMETRICAL) ===
 
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
+
 combo_lbrace {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <32 33>;                // F + G -> {
     bindings = <&kp LBRC>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_rbrace {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <40 41>;                // H + J -> } (mirror of F+G)
     bindings = <&kp RBRC>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;
     layers = <0>;
 };
 
 combo_lparen {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <31 32>;                // D + F -> (
     bindings = <&kp LPAR>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_rparen {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <41 42>;                // J + K -> ) (mirror of D+F)
     bindings = <&kp RPAR>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_lbracket {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <30 31>;                // S + D -> [
     bindings = <&kp LBKT>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;
     layers = <0>;
 };
 
 combo_rbracket {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <42 43>;                // K + L -> ] (mirror of S+D)
     bindings = <&kp RBKT>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 // === QUOTES ===
 
 combo_dqt {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <17 18>;                // E + R -> "
     bindings = <&kp DQT>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_grave {
-    timeout-ms = <50>;
-    key-positions = <19 20>;                // R + T -> `
+    timeout-ms = <COMBO_TERM_FAST>;
+    key-positions = <18 19>;                // R + T -> `
     bindings = <&kp GRAVE>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 // === PROGRAMMING SYMBOLS ===
 
 combo_pipe {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <48 49>;                // X + C -> |
     bindings = <&kp PIPE>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_ampersand {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <49 50>;                // C + V -> &
     bindings = <&kp AMPS>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_dollar {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <50 51>;                // V + B -> $ (for template literals)
     bindings = <&kp DLLR>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 // === OPERATORS ===
 
 combo_equal {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <54 55>;                // N + M -> =
     bindings = <&kp EQUAL>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_plus {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <55 56>;                // M + < -> +
     bindings = <&kp PLUS>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_minus {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <56 57>;                // < + > -> -
     bindings = <&kp MINUS>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_star {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <21 22>;                // Y + U -> *
     bindings = <&kp STAR>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_slash {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <22 23>;                // U + I -> /
     bindings = <&kp FSLH>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 // === HTML/CSS SPECIFIC ===
 
 combo_lt {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <47 48>;                // Z + X -> < (HTML tags)
     bindings = <&kp LT>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_gt {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <57 58>;                // > + ? -> > (HTML tags)
     bindings = <&kp GT>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_home {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <29 30>;                // A + S -> Home
     bindings = <&kp HOME>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
 
 combo_end {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <43 44>;                // L + ; -> End
     bindings = <&kp END>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
+
+
+// === Navigation combos ===
+
+combo_cmd_tab {
+    timeout-ms = <COMBO_TERM_SLOW>;
+    key-positions = <41 42 43>;                // J + K + L  -> Cmd+Tab (App Switcher)
+    bindings = <&swap>;
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+    layers = <0>;
+};
+
+combo_cntrl_tab {
+    timeout-ms = <COMBO_TERM_SLOW>;
+    key-positions = <30 31 32>;                // S + D + F  -> Ctrl+Tab (Tab Switcher)
+    bindings = <&kp LC(TAB)>;
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+    layers = <0>;
+};
+
+ 
