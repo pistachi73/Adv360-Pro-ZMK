@@ -196,7 +196,19 @@ combo_cntrl_tab {
     layers = <0>;
 };
 
- 
+combo_alfred {
+    timeout-ms = <COMBO_TERM_SLOW>;
+    key-positions = <23 24 25>;                // U + I + O -> Cmd+Space (Alfred)
+    bindings = <&kp LG(SPACE)>;
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+    layers = <0>;
+};
 
- 
+combo_save {
+    timeout-ms = <COMBO_TERM_SLOW>;
+    key-positions = <30 31 32>;                // S + D + F -> Cmd+S (Save)
+    bindings = <&kp LG(S)>;
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+    layers = <0>;
+}
 
