@@ -79,8 +79,16 @@ combo_grave {
 
 combo_pipe {
     timeout-ms = <COMBO_TERM_FAST>;
-    key-positions = <48 49>;                // X + C -> |
+    key-positions = <47 48>;                // Z + X -> |
     bindings = <&kp PIPE>;
+    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
+    layers = <0>;
+};
+
+combo_dollar {
+    timeout-ms = <COMBO_TERM_FAST>;
+    key-positions = <48 49>;                // X + C -> $ (for template literals)
+    bindings = <&kp DLLR>;
     require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
@@ -89,14 +97,6 @@ combo_ampersand {
     timeout-ms = <COMBO_TERM_FAST>;
     key-positions = <49 50>;                // C + V -> &
     bindings = <&kp AMPS>;
-    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
-    layers = <0>;
-};
-
-combo_dollar {
-    timeout-ms = <COMBO_TERM_FAST>;
-    key-positions = <50 51>;                // V + B -> $ (for template literals)
-    bindings = <&kp DLLR>;
     require-prior-idle-ms = <COMBO_IDLE_FAST>;    
     layers = <0>;
 };
@@ -210,5 +210,34 @@ combo_save {
     bindings = <&kp LG(S)>;
     require-prior-idle-ms = <COMBO_IDLE_SLOW>;
     layers = <0>;
-}
+};
+
+combo_search_editor {
+    timeout-ms = <COMBO_TERM_SLOW>;
+    key-positions = <16 17 18>;                // W + E + R -> Cmd+P (Search)
+    bindings = <&kp LG(P)>;
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+    layers = <0>;
+};
+
+
+combo_search_editor_p {
+    timeout-ms = <COMBO_TERM_SLOW>;
+    key-positions = <47 48 49>;                // Q + W + E -> Cmd+Shift+P (Search with >)
+    bindings = <&kp LG(LS(P))>;
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+    layers = <0>;
+};
+
+combo_go_to_explorer {
+    timeout-ms = <COMBO_TERM_SLOW>;
+    key-positions = <48 49 50>;                // W + E + R -> Cmd+Sift+E (Open explorer)
+    bindings = <&kp LG(LS(E))>;
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;
+    layers = <0>;
+};
+
+ 
+
+ 
 
