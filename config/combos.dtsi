@@ -60,44 +60,44 @@ combo_rbracket {
 // === QUOTES ===
 
 combo_dqt {
-    timeout-ms = <COMBO_TERM_FAST>;
+    timeout-ms = <COMBO_TERM_SLOW>;
     key-positions = <17 18>;                // E + R -> "
     bindings = <&kp DQT>;
-    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;    
     layers = <0>;
 };
 
 combo_grave {
-    timeout-ms = <COMBO_TERM_FAST>;
+    timeout-ms = <COMBO_TERM_SLOW>;
     key-positions = <18 19>;                // R + T -> `
     bindings = <&kp GRAVE>;
-    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;    
     layers = <0>;
 };
 
 // === PROGRAMMING SYMBOLS ===
 
 combo_pipe {
-    timeout-ms = <COMBO_TERM_FAST>;
+    timeout-ms = <COMBO_TERM_SLOW>;
     key-positions = <47 48>;                // Z + X -> |
     bindings = <&kp PIPE>;
-    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;    
     layers = <0>;
 };
 
 combo_dollar {
-    timeout-ms = <COMBO_TERM_FAST>;
+    timeout-ms = <COMBO_TERM_SLOW>;
     key-positions = <48 49>;                // X + C -> $ (for template literals)
     bindings = <&kp DLLR>;
-    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;    
     layers = <0>;
 };
 
 combo_ampersand {
-    timeout-ms = <COMBO_TERM_FAST>;
+    timeout-ms = <COMBO_TERM_SLOW>;
     key-positions = <49 50>;                // C + V -> &
     bindings = <&kp AMPS>;
-    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;    
     layers = <0>;
 };
 
@@ -162,18 +162,18 @@ combo_gt {
 };
 
 combo_home {
-    timeout-ms = <COMBO_TERM_FAST>;
+    timeout-ms = <COMBO_TERM_SLOW>;
     key-positions = <29 30>;                // A + S -> Home
     bindings = <&kp HOME>;
-    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;    
     layers = <0>;
 };
 
 combo_end {
-    timeout-ms = <COMBO_TERM_FAST>;
+    timeout-ms = <COMBO_TERM_SLOW>;
     key-positions = <43 44>;                // L + ; -> End
     bindings = <&kp END>;
-    require-prior-idle-ms = <COMBO_IDLE_FAST>;    
+    require-prior-idle-ms = <COMBO_IDLE_SLOW>;    
     layers = <0>;
 };
 
