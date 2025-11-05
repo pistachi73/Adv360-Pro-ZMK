@@ -61,7 +61,7 @@ combo_rbracket {
 
 combo_dqt {
     timeout-ms = <COMBO_TERM_SLOW>;
-    key-positions = <17 18>;                // E + R -> "
+    key-positions = <18 19>;                // E + R -> "
     bindings = <&kp DQT>;
     require-prior-idle-ms = <COMBO_IDLE_SLOW>;    
     layers = <0>;
@@ -69,7 +69,7 @@ combo_dqt {
 
 combo_grave {
     timeout-ms = <COMBO_TERM_SLOW>;
-    key-positions = <18 19>;                // R + T -> `
+    key-positions = <16 17>;                // R + T -> `
     bindings = <&kp GRAVE>;
     require-prior-idle-ms = <COMBO_IDLE_SLOW>;    
     layers = <0>;
